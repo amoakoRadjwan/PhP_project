@@ -8,7 +8,7 @@ if (!$Verbindung)
 {
     die('Keine Verbindung möglich: ' . mysql_error());
 }
-if (!mysql_select_db('db2924x2659170')) {
+if (!mysql_select_db($datenbank)) {
     die('Konnte Schema nicht selektieren: ' . mysql_error());
 }
 

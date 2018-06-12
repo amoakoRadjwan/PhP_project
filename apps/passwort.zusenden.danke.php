@@ -7,11 +7,11 @@ $neuesPW2=$_POST['neuesPW2'];
 
 
 require("einstellungen.php");
- $Verbindung = mysqli_connect($ip, $myname, $geheim, 'db2924x2659170');
+ $Verbindung = mysqli_connect($ip, $myname, $geheim, $datenbank);
 if (!$Verbindung) {
     die('Keine Verbindung möglich: ' . mysqli_connect_error());
  }
-// if (!mysql_select_db('db2924x2659170')) {
+// if (!mysql_select_db($datenbank)) {
 //    die('Konnte Schema nicht selektieren: ' . mysql_error());
 // }
 
